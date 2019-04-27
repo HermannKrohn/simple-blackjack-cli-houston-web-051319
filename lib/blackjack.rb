@@ -46,7 +46,7 @@ def hit?(current_card_total)
   #  invalid_command
   if answer == 'h'
       newCard = deal_card
-      newTotal = newCard+current_card_total
+      newTotal = display_card_total(newCard+current_card_total)
       return newTotal
   end
     current_card_total
