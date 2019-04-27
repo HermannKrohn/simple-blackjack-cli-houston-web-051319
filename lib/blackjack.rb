@@ -42,9 +42,9 @@ def hit?(current_card_total)
   # code hit? here
   prompt_user
   answer = get_user_input
-  if answer != 'h' || answer != 's'
-    invalid_command
-  elsif answer == 'h'
+ # if answer != 'h' || answer != 's'
+  #  invalid_command
+  if answer == 'h'
       newCard = deal_card
       newTotal = newCard+current_card_total
       return newTotal
